@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('casino.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player {
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    color: greenyellow;
+    text-shadow: 3px 3px 2px black;
+}
+
+button {
+    background-color:greenyellow;
+    color: #000000;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 10px; 
+    font-size: 18px;     
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+button:hover {
+    background-color: greenyellow; 
+}
+
+.score-container, .result-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px; 
+}
+
+.score {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #070401;
+    color: white;
+    padding: 5px 50px;
+    border-radius: 10px;
+}
+
+.resultUser, .resultComputer {
+    width: 310px;
+    height: 435px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.5s ease-in-out;
+    transform: scale(0);
+}
